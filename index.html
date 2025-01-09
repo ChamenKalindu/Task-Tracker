@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Task Tracker</h1>
+        </div>
+        <div class="task-input">
+            <input type="text" placeholder="Enter a task">
+            <select>
+                <option>Urgent</option>
+                <option>Work</option>
+                <option>Personal</option>
+            </select>
+            <button>Add Task</button>
+        </div>
+        <div class="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option>All</option>
+                <option>Urgent</option>
+                <option>Work</option>
+                <option>Personal</option>
+            </select>
+        </div>
+        <div class="tasks">
+            <h2>Tasks</h2>
+
+            <ul id="task-list">
+                <li>
+                    <div class="task-item">
+                        <span>Do the Assignment 1 - <strong>Work</strong></span>
+                        <div>
+                            <button class="complete-btn">Complete</button>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="clear-btn">Clear All Tasks</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
